@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+{% for project in site.projects %}
+  <a href="{{ project.url }}">
+    {{ project.client }}
+  </a>
+{% endfor %}
 <!-- ABOUT SECTION -->
 <section class="grid">
   <img id="profile" src="assets/img/lynn.jpg"/>

@@ -1,40 +1,40 @@
 ---
 layout: default
-client: Health Canada
 ---
 
 <!-- BANNER ONE -->
 <section style="background-image: url('{{ page.banner }}')">
-  <div>
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.description }}</h2>
-  </div>
+  <h1>
+    {{ page.client }}
+  </h1>
+  <h2>
+    {{ page.categories }}
+  </h2>
 </section>
 
 <!-- BLURB ONE -->
 <section>
-  <p>{{ page.paragraphone }}</p>
+  <p>{{ page.blurb }}</p>
 </section>
 
 <!-- IMAGES -->
-<section style="background-image: url('{{ page.images }}')"></section>
+<section style="background-image: url('{{ page.main-image }}')"></section>
 
 <!-- PROCESS -->
 <section>
-  <p>{{ page.paragraphtwo }}</p>
+  <h2>
+    {{ page.process-title }}
+  <p>
+    {{ page.process-blurb }}
+  </p>
 </section>
 
-<!-- 2nd set of IMAGES – A -->
+<!-- IMAGES -->
 <section class="grid">
-  <div class="col-6">
-    <h5>blurb</h5>
-  </div>
-  <div class="col-6">
-
-<!-- ?????? -->
-
-  </div>
-</section>
+  {% for item in page.images %}
+    <div class="col #" sytle="background-image:url('{{ item.images }}')"></div>
+    <div class="#">This project is {{ item.caption }}></div>
+  {% endfor %}
 
 <!-- 2nd set of IMAGES – B -->
 <section class="grid">
@@ -42,17 +42,6 @@ client: Health Canada
     <h5>blurb</h5>
   </div>
   <div class="col-6">
-
-<!-- ?????? -->
-
-  </div>
-</section>
-
-<!-- BLURB TWO -->
-<section>
-  <p>{{ page.paragraphthree }}</p>
-  <p>Button</p>
-</section>
 
 <!-- MORE WORK -->
 <section class="grid">
