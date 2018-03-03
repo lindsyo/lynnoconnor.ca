@@ -1,0 +1,34 @@
+/* -------- CSS RESET -------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing; border-box;
+}
+
+* {
+  border: 1px solid yellow;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -------- GENERAL HELPER CLASSES -------- */
+
+.left {
+  text-align: left;
+}
+
+.centered {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.no-padding {
+  padding: 0;
+}
