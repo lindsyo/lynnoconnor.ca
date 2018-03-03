@@ -32,3 +32,65 @@ img {
 .no-padding {
   padding: 0;
 }
+
+.med-height {
+  min-height: 50vh;
+}
+
+.bg-primary {
+  background-color: #292929;
+}
+
+.bg-secondary {
+  background-color: #f7484e;
+}
+
+/* HELPERS PADDING */
+
+.padding-all {
+  padding: 1rem;
+}
+
+.padding-top-bottom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.padding-left-right {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* POSITIONING */
+
+.display-block {
+  display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+
+/* -------- LAYOUT -------- */
+
+
+/* -------- TYPOGRAPHY -------- */
+
+
+/* -------- GENERAL STYLES -------- */
+
+/* -------- HEADER -------- */
+
+header {
+  min-height: 100vh;
+}
+
+header .col-12:first-child {
+  flex-grow: 1; /* "Grow" the first .col-12 up to the navigation */
+}
+
+h1 {
+  font-size: 10rem;
+  color: white;
+}

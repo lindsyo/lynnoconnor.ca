@@ -14,7 +14,7 @@ images:
   - url: /images/
     caption: Lorem
   - url: /images/
-    caption: Lorem
+    caption:Lorem
   - url: /images/
     caption: Lorem
 ---
