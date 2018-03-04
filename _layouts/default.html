@@ -2,31 +2,21 @@
 <html>
   {% include head.html %}
 
-  <!-- MAKE YOUR WEBSITE HERE -->
-
   <body>
     <!-- HEADER -->
-    <header class="bg-primary grid-column-spaceBetween-noBottom">
-      <div class="col-12 grid-noBottom-middle">
+    <header class="bg-primary grid-column-spaceBetween">
+      <div class="col-12 grid-middle fill-vertical">
         <div class="col-12">
           <h1>LO. A Design Studio</h1>
           <!-- <img src="assets/img/lynn.jpg"/> -->
         </div>
       </div>
-      <nav class="col-12 centered">
-        <a class="padding-all display-inline-block" href="#">about</a>
-        <a class="padding-all display-inline-block" href="#">portfolio</a>
-        <a class="padding-all display-inline-block" href="#">contact</a>
+      <nav class="col-12">
+        {% include nav.html %}
       </nav>
     </header>
 
     {{ content }}
-
-    <!-- FOOTER SECTION -->
-    <footer>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-linkedin-in"></i>
-    </footer>
 
     {% include footer.html %}
   </body>
