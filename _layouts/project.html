@@ -2,9 +2,21 @@
 <html>
   {% include head.html %}
 
-  <body>
+  <body class="layout-{{ page.layout }}">
+    <header class="bg-primary grid-spaceBetween">
+      <p>LO. A Design Studio</p>
+      <nav>
+        <a href="#">home</a>
+        <span>/</span>
+        {% include nav.html %}
+      </nav>
+    </header>
+
+    {{ page.title }}
 
     {{ content }}
+
+
 
     {% include javascripts.html %}
   </body>

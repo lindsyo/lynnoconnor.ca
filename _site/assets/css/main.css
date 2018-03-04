@@ -148,7 +148,7 @@ h2 {
 
 /* -------- HEADER -------- */
 
-header {
+body.layout-home header {
   min-height: 100vh;
 }
 

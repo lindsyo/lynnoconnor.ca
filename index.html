@@ -1,11 +1,6 @@
 ---
-layout: default
+layout: home
 ---
-<!-- {% for project in site.projects %}
-  <a href="{{ project.url }}">
-    {{ project.client }}
-  </a>
-{% endfor %} -->
 
 <!-- ABOUT -->
 <section id="about" class="grid">
@@ -48,9 +43,9 @@ layout: default
   </div>
   <div class="col-6_sm-8_xs-12 overflow-hidden">
     {% for item in site.projects %}
-      <article class="full-height grid-middle-center bg-cover" style="background-image: url('{{ item.featured-image }}')">
+      <article class="full-height grid-middle-center bg-cover" style="background-image: url('{{ item.image-featured }}')">
         <div class="col-12 centered">
-          <h3>{{ item.client }}: {{ item.title }}</h3>
+          <h3>{{ item.title }}</h3>
           <p>{{ item.excerpt }}</p>
           <a href="{{ item.url }}">more</a>
         </div>
