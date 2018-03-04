@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing; border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 * {
@@ -120,6 +121,7 @@ nav {
 }
 
 nav a {
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -130,8 +132,16 @@ nav a {
   margin-bottom: 1.5rem;
 }
 
+body.layout-project nav a {
+  margin-bottom: 0;
+}
+
 nav a:hover {
   border-bottom: solid 2px white;
+}
+
+body.layout-project nav a:hover {
+  border-color: transparent;
 }
 
 nav span {
@@ -164,7 +174,23 @@ header a {
 
 
 
-/* -------- ABOUT -------- */
+/* -------- PROJECT -------- */
+
+.project {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.project h1 {
+  color: black;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.project img {
+
+}
 
 
 

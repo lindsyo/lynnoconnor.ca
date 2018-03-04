@@ -3,7 +3,7 @@
   {% include head.html %}
 
   <body class="layout-{{ page.layout }}">
-    <header class="bg-primary grid-spaceBetween">
+    <header class="bg-primary grid-spaceBetween-noBottom">
       <p>LO. A Design Studio</p>
       <nav>
         <a href="#">home</a>
@@ -12,11 +12,19 @@
       </nav>
     </header>
 
-    {{ page.title }}
+    <section class="project">
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.description }}</p>
 
-    {{ content }}
+      {% for image in page.images %}
+      <img src="{{ image.path }}" alt="{{ image.alt }}">
+      {% endfor %}
 
+      </div>
 
+      <!-- <div class-"bg-image" style="background-image:url('{{ page.image-inline-1 }}')">
+      </div> -->
+    </section>
 
     {% include javascripts.html %}
   </body>
