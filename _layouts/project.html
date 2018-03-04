@@ -1,53 +1,11 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
 
-<!-- BANNER ONE -->
-<section style="background-image: url('{{ page.banner }}')">
-  <h1>
-    {{ page.client }}
-  </h1>
-  <h2>
-    {{ page.categories }}
-  </h2>
-</section>
+  <body>
 
-<!-- BLURB ONE -->
-<section>
-  <p>{{ page.blurb }}</p>
-</section>
+    {{ content }}
 
-<!-- IMAGES -->
-<section style="background-image: url('{{ page.main-image }}')"></section>
-
-<!-- PROCESS -->
-<section>
-  <h2>
-    {{ page.process-title }}
-  <p>
-    {{ page.process-blurb }}
-  </p>
-</section>
-
-<!-- IMAGES -->
-<section class="grid">
-  {% for item in page.images %}
-    <div class="col #" sytle="background-image:url('{{ item.images }}')"></div>
-    <div class="#">This project is {{ item.caption }}></div>
-  {% endfor %}
-
-<!-- 2nd set of IMAGES – B -->
-<section class="grid">
-  <div class="col-6">
-    <h5>blurb</h5>
-  </div>
-  <div class="col-6">
-
-<!-- MORE WORK -->
-<section class="grid">
-  {% for item in page.articles %}
-    <div class="col #-image" style="background-image:url('{{ item.image }}')">
-      <p class="#">Lorem ipsum dolor sit amet {{ item.location }}</p>
-    </div>
-  {% endfor %}
-</section>
+    {% include javascripts.html %}
+  </body>
+</html>

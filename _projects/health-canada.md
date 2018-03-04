@@ -1,4 +1,5 @@
 ---
+layout: project
 client: Health Canada
 title: Poster
 excerpt: This is the excerpt of the poster project

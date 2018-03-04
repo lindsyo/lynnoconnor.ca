@@ -146,8 +146,6 @@ h2 {
 }
 
 
-
-
 /* -------- HEADER -------- */
 
 header {
@@ -160,8 +158,6 @@ h1 {
 }
 
 header a {
-  text-decoration: none;
-  text-transform: uppercase;
   color: #f7484e
 }
 
@@ -198,6 +194,15 @@ header a {
 
 /* -------- FOOTER -------- */
 
+footer {
+  min-height: 100vh;
+}
+
 footer a {
-  color: grey;
+  color: black;
+}
+
+h4 {
+  font-size: 5rem;
+  color: white;
 }
