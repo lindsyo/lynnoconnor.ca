@@ -196,7 +196,6 @@ header a {
 }
 
 .project img {
-
 }
 
 .slash-color {
@@ -208,6 +207,11 @@ header a {
 
 #about h2 {
   color: white;
+  border-bottom: solid 4px #86E2D5;
+}
+
+#about .arrow {
+  color: #86E2D5
 }
 
 
@@ -220,7 +224,6 @@ header a {
 #portfolio article {
   position: relative;
   background-color: black;
-
 }
 
 #portfolio article a {
@@ -250,6 +253,14 @@ header a {
   text-transform: uppercase;
 }
 
+#portfolio .arrow {
+  color: #E8E8E8;
+}
+
+#portfolio h2 {
+  border-bottom: solid 4px #E8E8E8;
+}
+
 .article-text {
   position: relative;
   z-index: 2;
@@ -268,15 +279,22 @@ header a {
 
 /* -------- CONTACT -------- */
 
-#contact h2 {
-  color: white;
- }
-
 #contact nav a {
   color: #4ECDC4;
 }
 
+#contact h2 {
+  color: white;
+  border-bottom: solid 4px #555555;
+ }
+
+#contact .arrow {
+  color: #555555;
+}
+
+
 /* -------- FOOTER -------- */
+
 
 footer {
   min-height: 100vh;
