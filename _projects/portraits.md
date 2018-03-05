@@ -6,7 +6,9 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei
 image-featured: /assets/img/women-2.jpg
 images:
   - path: /assets/img/women.jpg
-    alt: Flu Poster
+    alt: women
   - path: /assets/img/women-2.jpg
-    alt: Flu Poster
+    alt: women
+  - path: /assets/img/women-3.jpg
+    alt: women
 ---
