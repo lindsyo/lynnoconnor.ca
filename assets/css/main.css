@@ -4,12 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing; border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Montserrat', sans-serif; */
+
 }
 
 * {
-  /* border: 1px solid yellow; */
+  /* border: 1px solid grey; */
 }
 
 img {
@@ -56,7 +58,11 @@ body {
 }
 
 .bg-secondary {
-  background-color: #f7484e; /* coral pink */
+  /* background-color: #f7484e; /* coral pink */
+
+  background-color: #4ECDC4; /* green */
+
+
 }
 
 .bg-cover {
@@ -130,6 +136,7 @@ nav a {
   padding-bottom: 1rem;
   display: inline-block;
   margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 body.layout-project nav a {
@@ -168,7 +175,7 @@ h1 {
 }
 
 header a {
-  color: #f7484e
+  color: #4ECDC4
 }
 
 
@@ -192,30 +199,81 @@ header a {
 
 }
 
+.slash-color {
+  color: #4ECDC4
+}
+
+
+/* -------- ABOUT -------- */
+
+#about h2 {
+  color: white;
+}
 
 
 /* -------- PORTFOLIO -------- */
 
 #portfolio nav a:hover {
-  border-bottom: solid 2px #f7484e;
+  border-bottom: solid 2px #4ECDC4;
+}
+
+#portfolio article {
+  position: relative;
+  background-color: black;
+
 }
 
 #portfolio article a {
-  color: white;
   text-decoration: none;
-  background-color: black;
+  background-color: #4ECDC4;
   display: inline-block;
   line-height: 60px;
   width: 60px;
   height: 60px;
   border-radius: 60px;
+  font-size: .75rem;
+  color: white;
+  text-transform: uppercase;
 }
+
+#portfolio article h3 {
+  font-size: 2rem;
+  margin-bottom: .15em;
+  color: white;
+  text-transform: uppercase;
+}
+
+#portfolio article p {
+  font-size: .75rem;
+  margin-bottom: 1em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.article-text {
+  position: relative;
+  z-index: 2;
+}
+
+.article-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: 1;
+}
+
 
 /* -------- CONTACT -------- */
 
-#contact h2,
-#contact nav a {
+#contact h2 {
   color: white;
+ }
+
+#contact nav a {
+  color: #4ECDC4;
 }
 
 /* -------- FOOTER -------- */
