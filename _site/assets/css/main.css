@@ -133,6 +133,10 @@ nav a {
   font-weight: 700;
 }
 
+a.featured {
+  color: #4ECDC4;
+}
+
 body.layout-project nav a {
   margin-bottom: 0;
 }
@@ -175,10 +179,17 @@ header a {
 #typed {
   color: white;
   font-size: 4rem;
+  text-align: center;
+  display: inline-block;
 }
 
 header span {
-  color: #4ECDC4
+  color: #4ECDC4;
+}
+
+.typed-cursor {
+  display: inline-block;
+  font-size: 3rem;
 }
 
 
@@ -189,8 +200,7 @@ header span {
   color: white;
   margin-left: 2em;
 } */
-
-body nav {
+body.layout-project nav {
   margin-right: 2em;
 }
 
@@ -229,8 +239,24 @@ body nav {
   color: #86E2D5
 }
 
+#about h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+#about h4 {
+  font-weight: 700;
+  margin-bottom: 1.25em;
+}
+
 #about p {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  line-height: 1.5rem;
+}
+
+#about .content {
+  margin-bottom: 3em;
 }
 
 
@@ -267,7 +293,7 @@ body nav {
 
 #portfolio article p {
   font-size: .75rem;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   color: white;
   text-transform: uppercase;
 }
@@ -298,36 +324,97 @@ body nav {
 
 /* -------- CONTACT -------- */
 
-#contact nav a {
+.contact nav a {
   color: #4ECDC4;
 }
 
-#contact span {
+.contact span {
   color: #4ECDC4
 }
 
-#contact h2 {
+.contact h2 {
   color: white;
   border-bottom: solid 4px #555555;
  }
 
-#contact .arrow {
+.contact .arrow {
   color: #555555;
 }
 
+.contact h3{
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.contact p {
+  color: color: #292929;
+  padding: 0.5rem 0;
+}
+
+
+.contact a {
+  text-decoration: none;
+  color: #292929;
+}
+
+.contact a.featured {
+  color: #4ECDC4;
+}
 
 /* -------- FOOTER -------- */
 
-
 footer {
+  position: relative;
   min-height: 100vh;
 }
 
-footer a {
-  color: black;
+footer .text {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
-h4 {
+footer #bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('/assets/img/footer-2.jpg');
+  opacity: .8;
+  z-index: 1;
+}
+
+footer .col-12 {
+  position: relative;
+  z-index: 2;
+}
+
+footer a {
+  color: #4ECDC4;
+}
+
+footer nav {
+  color: #4ECDC4;
+}
+
+/* -------- MEDIA QUERIES -------- */
+
+@media screen and (max-width: 568px) {
+  .fill-vertical-small-screen {
+    height: 100vh;
+  }
+  .make-grey-small-screen {
+    background-color: #FAFAFA;
+  }
+
+}
+
+
+
+
+/* h4 {
   font-size: 5rem;
   color: white;
-}
+} */

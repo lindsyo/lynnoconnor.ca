@@ -5,7 +5,7 @@ layout: home
 <!-- ABOUT -->
 <section id="about" class="grid">
   <!-- <img id="profile" src="assets/img/lynn.jpg"/> -->
-  <div class="col-6_sm-8_xs-12 bg-secondary grid-column-spaceBetween">
+  <div class="col-6_sm-8_xs-12 bg-secondary grid-column-spaceBetween fill-vertical-small-screen">
     <div class="col-12 grid-middle fill-vertical">
       <div class="col-12">
         <h2>About<span class="arrow"> ></span></h2>
@@ -19,9 +19,12 @@ layout: home
   <div class="col-6_sm-8_xs-12 grid-middle">
     <div class="col-12">
       <div class="padding-all-xl">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h4>I am a Print and Web Designer living in Canada.</h4>
+        <p class="content">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Print Design</h3>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit volutpat tempor. In consectetur vitae eros et eleifend. Duis dapibus suscipit accumsan. Aenean a dui fringilla, tristique quam vitae, scelerisque felis. Proin aliquet nibh, at vehicula purus.</p>
+        <h3>Web Design</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.</p>
         </p>
       </div><!-- .padding-all -->
     </div><!-- .col-12 -->
@@ -30,7 +33,7 @@ layout: home
 
 <!-- PORTFOLIO -->
 <section id="portfolio" class="grid-noBottom-noGutter">
-  <div class="col-6_sm-8_xs-12 grid-noBottom-noGutter">
+  <div class="col-6_sm-8_xs-12 grid-noBottom-noGutter make-grey-small-screen">
     <div id="stick" class="col-12 full-height grid-column-noBottom-spaceBetween-noGutter">
       <div class="col-12 grid-middle-noGutter fill-vertical">
         <div class="col-12">
@@ -47,8 +50,8 @@ layout: home
     {% for item in site.projects %}
       <article class="full-height grid-middle-center bg-cover">
         <div class="article-text col-12 centered">
-          <h3>{{ item.title }}</h3> <!-- Flu Poster -->
-          <p>{{ item.excerpt }}</p> <!-- Blurb -->
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.excerpt }}</p>
           <a href="{{ item.url }}">more</a>
         </div>
         <div class="article-image bg-cover" style="background-image: url('{{ item.image-featured }}')"></div>
@@ -58,8 +61,8 @@ layout: home
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="grid">
-  <div class="col-6_sm-8_xs-12 bg-primary grid-column-spaceBetween">
+<section id="contact" class="grid contact">
+  <div class="col-6_sm-8_xs-12 bg-primary grid-column-spaceBetween fill-vertical-small-screen">
     <div class="col-12 grid-middle fill-vertical">
       <div class="col-12">
         <h2 class="font-color">Contact<span class="arrow"> ></span></h2></h2>
@@ -70,15 +73,15 @@ layout: home
       {% include nav.html %}
     </nav>
   </div>
-  <div class="col-6_sm-8_xs-12 grid-middle">
+  <div class="col-6_sm-8_xs-12 grid-middle fill-vertical-small-screen">
     <div class="col-12">
       <div class="padding-all-xl">
-        <p>Lynn O'Connor</p>
-        <p>Print | Web Designer</p>
+        <h3>Lynn O'Connor</h3>
+        <p>Print / Web Designer</p>
         <p>
-          <a href="mailto:hello@lynnoconnor.ca">hello@lynnoconnor.ca</a>
+          <a class="featured" href="mailto:hello@lynnoconnor.ca">hello@lynnoconnor.ca</a>
         </p>
-        <p>
+        <p >
           <a href="tel:613-806-3323">613 806 3323</a>
         </p>
         <p>

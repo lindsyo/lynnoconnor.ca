@@ -5,7 +5,7 @@
 
   <!-- META -->
 
-  <meta name="viewpoint" content="width-device-width, user-scalable=0" />
+  <meta name="viewport" content="width=device-width, user-scalable=0" />
 
   <!-- CSS -->
 
@@ -26,17 +26,17 @@
         <div class="col-12">
           <div id="typed-strings">
             <p>Welcome <strong>fun</strong> people.</p>
-            <p>to my very<em> nifty</em> website.</p>
+            <p>This is my <em> nifty</em> website.</p>
           </div>
         <span id="typed"></span>
         </div>
       </div>
       <nav class="col-12">
-        <a href="#about">about</a>
+        <a href="/index#about">about</a>
 <span>/</span>
-<a href="#portfolio">portfolio</a>
+<a href="/index#portfolio">portfolio</a>
 <span>/</span>
-<a href="#contact">contact</a>
+<a href="/index#contact">contact</a>
 
       </nav>
     </header>
@@ -44,7 +44,7 @@
     <!-- ABOUT -->
 <section id="about" class="grid">
   <!-- <img id="profile" src="assets/img/lynn.jpg"/> -->
-  <div class="col-6_sm-8_xs-12 bg-secondary grid-column-spaceBetween">
+  <div class="col-6_sm-8_xs-12 bg-secondary grid-column-spaceBetween fill-vertical-small-screen">
     <div class="col-12 grid-middle fill-vertical">
       <div class="col-12">
         <h2>About<span class="arrow"> ></span></h2>
@@ -52,20 +52,23 @@
       </div>
     </div>
     <nav class="col-12">
-      <a href="#about">about</a>
+      <a href="/index#about">about</a>
 <span>/</span>
-<a href="#portfolio">portfolio</a>
+<a href="/index#portfolio">portfolio</a>
 <span>/</span>
-<a href="#contact">contact</a>
+<a href="/index#contact">contact</a>
 
     </nav>
   </div>
   <div class="col-6_sm-8_xs-12 grid-middle">
     <div class="col-12">
       <div class="padding-all-xl">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h4>I am a Print and Web Designer living in Canada.</h4>
+        <p class="content">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Print Design</h3>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit volutpat tempor. In consectetur vitae eros et eleifend. Duis dapibus suscipit accumsan. Aenean a dui fringilla, tristique quam vitae, scelerisque felis. Proin aliquet nibh, at vehicula purus.</p>
+        <h3>Web Design</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim idest laborum.</p>
         </p>
       </div><!-- .padding-all -->
     </div><!-- .col-12 -->
@@ -74,7 +77,7 @@
 
 <!-- PORTFOLIO -->
 <section id="portfolio" class="grid-noBottom-noGutter">
-  <div class="col-6_sm-8_xs-12 grid-noBottom-noGutter">
+  <div class="col-6_sm-8_xs-12 grid-noBottom-noGutter make-grey-small-screen">
     <div id="stick" class="col-12 full-height grid-column-noBottom-spaceBetween-noGutter">
       <div class="col-12 grid-middle-noGutter fill-vertical">
         <div class="col-12">
@@ -83,11 +86,11 @@
         </div>
       </div>
       <nav class="col-12">
-        <a href="#about">about</a>
+        <a href="/index#about">about</a>
 <span>/</span>
-<a href="#portfolio">portfolio</a>
+<a href="/index#portfolio">portfolio</a>
 <span>/</span>
-<a href="#contact">contact</a>
+<a href="/index#contact">contact</a>
 
       </nav>
     </div>
@@ -96,8 +99,8 @@
     
       <article class="full-height grid-middle-center bg-cover">
         <div class="article-text col-12 centered">
-          <h3>Nature</h3> <!-- Flu Poster -->
-          <p>Wildlife series</p> <!-- Blurb -->
+          <h3>Nature</h3>
+          <p>Wildlife series</p>
           <a href="/nature">more</a>
         </div>
         <div class="article-image bg-cover" style="background-image: url('assets/img/horse.jpg')"></div>
@@ -105,8 +108,8 @@
     
       <article class="full-height grid-middle-center bg-cover">
         <div class="article-text col-12 centered">
-          <h3>Portrait</h3> <!-- Flu Poster -->
-          <p>Women series</p> <!-- Blurb -->
+          <h3>Portrait</h3>
+          <p>Women series</p>
           <a href="/portraits">more</a>
         </div>
         <div class="article-image bg-cover" style="background-image: url('/assets/img/women-2.jpg')"></div>
@@ -114,8 +117,8 @@
     
       <article class="full-height grid-middle-center bg-cover">
         <div class="article-text col-12 centered">
-          <h3>Travel</h3> <!-- Flu Poster -->
-          <p>New York series</p> <!-- Blurb -->
+          <h3>Travel</h3>
+          <p>New York series</p>
           <a href="/travel">more</a>
         </div>
         <div class="article-image bg-cover" style="background-image: url('/assets/img/travel.jpg')"></div>
@@ -125,8 +128,8 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="grid">
-  <div class="col-6_sm-8_xs-12 bg-primary grid-column-spaceBetween">
+<section id="contact" class="grid contact">
+  <div class="col-6_sm-8_xs-12 bg-primary grid-column-spaceBetween fill-vertical-small-screen">
     <div class="col-12 grid-middle fill-vertical">
       <div class="col-12">
         <h2 class="font-color">Contact<span class="arrow"> ></span></h2></h2>
@@ -134,23 +137,23 @@
       </div>
     </div>
     <nav class="col-12">
-      <a href="#about">about</a>
+      <a href="/index#about">about</a>
 <span>/</span>
-<a href="#portfolio">portfolio</a>
+<a href="/index#portfolio">portfolio</a>
 <span>/</span>
-<a href="#contact">contact</a>
+<a href="/index#contact">contact</a>
 
     </nav>
   </div>
-  <div class="col-6_sm-8_xs-12 grid-middle">
+  <div class="col-6_sm-8_xs-12 grid-middle fill-vertical-small-screen">
     <div class="col-12">
       <div class="padding-all-xl">
-        <p>Lynn O'Connor</p>
-        <p>Print | Web Designer</p>
+        <h3>Lynn O'Connor</h3>
+        <p>Print / Web Designer</p>
         <p>
-          <a href="mailto:hello@lynnoconnor.ca">hello@lynnoconnor.ca</a>
+          <a class="featured" href="mailto:hello@lynnoconnor.ca">hello@lynnoconnor.ca</a>
         </p>
-        <p>
+        <p >
           <a href="tel:613-806-3323">613 806 3323</a>
         </p>
         <p>
@@ -163,19 +166,19 @@
 </section>
 
 
-    <footer class="bg-secondary grid-column-spaceBetween">
+    <footer class="bg-primary grid-column-spaceBetween">
+      <div id="bg" class="bg-cover"></div>
       <div class="col-12 grid-middle fill-vertical">
-        <div class="col-12">
-          <h4>Image here</h4>
-          <!-- <img src="assets/img/boy.jpg"/> -->
+        <div class="col-12 text">
+          Thank you.
         </div>
       </div>
       <nav class="col-12">
-        <a href="#about">about</a>
+        <a href="/index#about">about</a>
 <span>/</span>
-<a href="#portfolio">portfolio</a>
+<a href="/index#portfolio">portfolio</a>
 <span>/</span>
-<a href="#contact">contact</a>
+<a href="/index#contact">contact</a>
 
       </nav>
     </footer>
