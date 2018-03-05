@@ -1,9 +1,14 @@
+---
+---
+
+$dark: #292929;
+
 /* -------- CSS RESET -------- */
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing; border-box;
+  box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 
 }
@@ -52,7 +57,7 @@ body {
 }
 
 .bg-primary {
-  background-color: #292929; /* grey */
+  background-color: $dark; /* grey */
 }
 
 .bg-secondary {
@@ -118,19 +123,19 @@ body {
 
 nav {
   text-align: center;
-}
 
-nav a {
-  font-size: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  border: solid 2px transparent;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border: solid 2px transparent;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
 }
 
 a.featured {
@@ -187,6 +192,10 @@ header span {
   color: #4ECDC4;
 }
 
+header p {
+  color: $dark;
+}
+
 .typed-cursor {
   display: inline-block;
   font-size: 3rem;
@@ -221,6 +230,7 @@ body.layout-project nav {
   margin-left: 3em;
   margin-right: 3em;
   margin-bottom: 3em;
+  line-height: 1.5rem;
 }
 
 .project img {
@@ -230,35 +240,36 @@ body.layout-project nav {
 
 /* -------- ABOUT -------- */
 
-#about h2 {
-  color: white;
-  border-bottom: solid 4px #86E2D5;
-}
+#about {
+  h2 {
+    color: white;
+    border-bottom: solid 4px #86E2D5;
+  }
 
-#about .arrow {
-  color: #86E2D5
-}
+  .arrow {
+    color: #86E2D5
+  }
 
-#about h3 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 1em;
-}
+  h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
 
-#about h4 {
-  font-weight: 700;
-  margin-bottom: 1.25em;
-}
+  h4 {
+    font-weight: 700;
+    margin-bottom: 1.25em;
+  }
 
-#about p {
-  margin-bottom: 1em;
-  line-height: 1.5rem;
-}
+  p {
+    margin-bottom: 1em;
+    line-height: 1.5rem;
+  }
 
-#about .content {
-  margin-bottom: 3em;
+  .content {
+    margin-bottom: 3em;
+  }
 }
-
 
 /* -------- PORTFOLIO -------- */
 
@@ -348,19 +359,23 @@ body.layout-project nav {
 }
 
 .contact p {
-  color: color: #292929;
+  color: $dark;
   padding: 0.5rem 0;
 }
 
-
 .contact a {
   text-decoration: none;
-  color: #292929;
+  color: $dark;
 }
 
 .contact a.featured {
   color: #4ECDC4;
 }
+
+.contact a.featured:hover {
+  color: lightgrey;
+}
+
 
 /* -------- FOOTER -------- */
 
@@ -373,6 +388,7 @@ footer .text {
   color: white;
   font-size: 4rem;
   font-weight: 700;
+  text-align: center;
 }
 
 footer #bg {
