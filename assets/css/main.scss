@@ -188,6 +188,18 @@ header a {
   display: inline-block;
 }
 
+.bg-primary .typed-space {
+  height: 4rem;
+}
+
+.logo {
+  margin-bottom: 4em;
+
+  img {
+    height: 7rem;
+  }
+}
+
 header span {
   color: #4ECDC4;
 }
@@ -361,6 +373,31 @@ body.layout-project nav {
 .contact p {
   color: $dark;
   padding: 0.5rem 0;
+}
+
+p.socials {
+  position: relative;
+  left: -.4rem;
+}
+
+.socials a {
+  font-size: 2rem;
+  padding: .4rem;
+  transition: 1s;
+}
+
+.socials a:hover {
+  color: #4ECDC4;
+  transition: .5s;
+}
+
+.socials a svg {
+  transition: 1s;
+}
+
+.socials a:hover svg {
+  transition: 1.5s;
+  transform: scale(1.1);
 }
 
 .contact a {

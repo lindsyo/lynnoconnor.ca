@@ -7,6 +7,8 @@ image-featured: /assets/img/travel.jpg
 images:
   - path: /assets/img/travel.jpg
     alt: Flu Poster
+  - path: /assets/img/travel-3.jpg
+    alt: Flu Poster
   - path: /assets/img/travel-2.jpg
     alt: Flu Poster
 ---
